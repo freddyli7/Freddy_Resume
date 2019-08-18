@@ -1,5 +1,45 @@
 \cvsection{Projects(Github)}
 \begin{cventries}
+\cventry
+    {Technologies: \quad Nodejs, JSON-RPC2.0
+    }
+    {Oneledger Chain SDK}
+    {}
+    {Apr. 2019 - May. 2019}
+    {
+      \begin{cvitems}
+        \item {Oneledger Chain SDK is the client side layer which allows clients send RPC requests to make a call or a transaction.}
+        \item {This SDK uses JSON-RPC2.0 as request format, and handles response using Promise.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Technologies: \quad Ed25519, RIPEMD160, Nodejs
+    }
+    {Oneledger Wallet}
+    {}
+    {May. 2019 - Now}
+    {
+      \begin{cvitems}
+        \item {Oneledger Wallet allows clients to create new keypairs and sign RawTx.}
+        \item {This Wallet is using Ed25519 as key algorithm and using RIPEMD160 as hash algorithm.}
+        \item {This Wallet allows clients to generate RawTx offline which means without contacting any Oneledger fullnode, and sign txs signature offline.}
+      \end{cvitems}
+    }
+    
+\cventry
+    {Technologies: \quad Go, Tendermint
+    }
+    {Oneledger Chain}
+    {}
+    {May. 2019 - Now}
+    {
+      \begin{cvitems}
+        \item {Oneledger chain will be one of the main Blockchain networks which allows enterprise level interoperability.}
+        \item {Using Tendermint as low level consensus algorithm component, Oneledger chain builds transaction layer and distributed database layer on fullnode and explorer nodes.}
+        \item {I contributed in ApplyValidator and Fee features.}
+      \end{cvitems}
+    }
 
 \cventry
     {Technologies: \quad Truffle, Parity, AWS
