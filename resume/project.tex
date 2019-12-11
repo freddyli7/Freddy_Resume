@@ -1,43 +1,74 @@
 \cvsection{Projects(Github)}
 \begin{cventries}
 \cventry
-    {Technologies: \quad Nodejs, JSON-RPC2.0
+    {Technologies: \quad Typescript, RPC, JSON serialization, messagePack
     }
-    {Oneledger Chain SDK}
+    {Oneledger SDK}
     {}
-    {Apr. 2019 - May. 2019}
+    {Apr. 2019 - now}
     {
       \begin{cvitems}
-        \item {Oneledger Chain SDK is the client side layer which allows clients send RPC requests to make a call or a transaction.}
-        \item {This SDK uses JSON-RPC2.0 as request format, and handles response using Promise.}
+        \item {Oneledger Chain SDK is the middle layer between community developers and oneledger blockchain which allows developers to query block or transaction info from remote RPC endpoint or serialise transactions offline and securely send transactions.}
+        \item {Support multiple offline serialization implementations such as JSON base64,  MessagePack.}
+        \item {Easily configurable transaction offline serialization and sign workflow which allows community to extend their own transaction types and use different network.}
+        \item {Support different type of transaction broadcasting.}
+        \item {Support RPC Call for regular transaction type and HTTPS API call for BTC Interoperability transaction type.}
+        \item {Support different chain's transaction with default currency registration and other optional currencies.}
+        \item {Easily configurable error handler for community to add and handle new errors.}
+        \item {Integrated with Oneledger Explorer which allows community to query all kinds of chain info.}
+        \item {Provided faucet to mint OLT tokens for Testnet.}
       \end{cvitems}
     }
 
 \cventry
-    {Technologies: \quad Ed25519, RIPEMD160, Nodejs
+    {Technologies: \quad Typescript, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256
     }
-    {Oneledger Wallet}
+    {Oneledger Hierarchical Deterministic(HD) Wallet}
     {}
-    {May. 2019 - Now}
+    {Jun. 2019 - Now}
     {
       \begin{cvitems}
-        \item {Oneledger Wallet allows clients to create new keypairs and sign RawTx.}
-        \item {This Wallet is using Ed25519 as key algorithm and using RIPEMD160 as hash algorithm.}
-        \item {This Wallet allows clients to generate RawTx offline which means without contacting any Oneledger fullnode, and sign txs signature offline.}
+        \item {Oneledger HD Wallet allows community to generate new keypairs and sign RawTxs for multiple chains.}
+        \item {Support configurable entropy to derive master seed for backup.}
+        \item {Support whole wallet recovery from any device.}
+        \item {Support BTC, ETH and OLT(Oneledger) keys derivation.}
+        \item {Encapsulated master seed and any private key derivation for security.}
+        \item {Export new key derivation and transaction sign to caller.}
+        \item {Using hardened extended key path for local wallet.}
+        \item {Support different address verification based on the chain type.}
       \end{cvitems}
     }
     
 \cventry
     {Technologies: \quad Go, Tendermint
     }
-    {Oneledger Chain}
+    {Oneledger Protocol}
     {}
     {May. 2019 - Now}
     {
       \begin{cvitems}
-        \item {Oneledger chain will be one of the main Blockchain networks which allows enterprise level interoperability.}
-        \item {Using Tendermint as low level consensus algorithm component, Oneledger chain builds transaction layer and distributed database layer on fullnode and explorer nodes.}
-        \item {I contributed in ApplyValidator and Fee features.}
+        \item {Oneledger chain is one of the main Blockchain networks which aims to build enterprise level Interoperability and open source for community to build apps.}
+        \item {Using Tendermint as core consensus component, Oneledger chain builds application(Fullnode) layer, transaction verification layer and chain state distributed database layer on fullnode and explorer node.}
+        \item {Contributed on Apply Validator feature. Allow fullnode address to stake and become a validator or unstake to purge validator.}
+        \item {Contributed on Transaction Fee feature. Designed and implemented transaction fee charge logic, fee collection and fee reward withdraw for validators.}
+      \end{cvitems}
+    }
+    
+    
+    \cventry
+    {Technologies: \quad Go, Tendermint, PostgreSQL
+    }
+    {Oneledger Explorer}
+    {}
+    {Aug. 2019 - Now}
+    {
+      \begin{cvitems}
+        \item {Oneledger chain Explorer is a centralized server to watch and synchronize new block from Oneledger Fullnode and provide API for querying Oneledger chain info.}
+        \item {By connecting to RPC endpoint of a Fullnode Tendermint, watch and sync all blocks and all transactions and persist in PostgreSQL.}
+        \item {Catching up blocks and transactions if Explorer is down or restarted.}
+        \item {Easily extendable transaction type design and DB design for new transaction types in Protocol.}
+        \item {Provide web socket for Oneledger Explorer UI.}
+        \item {Provide API for community developers to query blocks and transactions info.}
       \end{cvitems}
     }
 
