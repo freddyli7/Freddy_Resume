@@ -1,74 +1,89 @@
 \cvsection{Projects(Github)}
 \begin{cventries}
+
 \cventry
-    {Technologies: \quad Typescript, RPC, JSON serialization, messagePack
-    }
-    {Oneledger SDK}
+    {Technologies: \quad Go, Tendermint}
+    {OneLedger Blockchain Protocol}
     {}
-    {Apr. 2019 - now}
+    {Oct. 2019 - Now}
     {
       \begin{cvitems}
-        \item {Oneledger Chain SDK is the middle layer between community developers and oneledger blockchain which allows developers to query block or transaction info from remote RPC endpoint or serialise transactions offline and securely send transactions.}
-        \item {Support multiple offline serialization implementations such as JSON base64,  MessagePack.}
-        \item {Easily configurable transaction offline serialization and sign workflow which allows community to extend their own transaction types and use different network.}
-        \item {Support different type of transaction broadcasting.}
-        \item {Support RPC Call for regular transaction type and HTTPS API call for BTC Interoperability transaction type.}
-        \item {Support different chain's transaction with default currency registration and other optional currencies.}
-        \item {Easily configurable error handler for community to add and handle new errors.}
-        \item {Integrated with Oneledger Explorer which allows community to query all kinds of chain info.}
-        \item {Provided faucet to mint OLT tokens for Testnet.}
+        \item {OneLedger blockchain is one of the public Blockchain networks which aims to build enterprise level Interoperability and open source for community to build dApps. (\url{https://github.com/Oneledger/protocol}).}
+        \item {Using Tendermint as core consensus engine, OneLedger chain has application(node) layer, RPC layer, transaction verification /distribution layer and chain state distributed database(LevelDB) layer on fullnode and validator node.}
+        \item {RPC layer: designed and implemented RPC endpoints for transaction and query.}
+        \item {Transaction layer: designed and implemented transaction verification(signature mapping) for all transaction types, transaction fee charge logic, fee collection and reward withdrawal for validators.}
+        \item {Distributed Database layer: designed and implemented database schema and store structure for different transaction types and block info.}
+        \item {Block scope: designed and implemented block beginner and block end for internal transaction logic.}
+        \item {Transactions: OneLedger Domain Service, Governance, Staking\&Delegation, Block Rewards, Multi-currency Transfer, ETH/OLT Interoperability.}
+      \end{cvitems}
+    }
+    
+    \cventry
+    {Technologies: \quad Go, NodeJS, Redis, PostgreSQL, Bloom Filter, HD wallet, FSM, Ethereum, BitCoin}
+    {BitSpawn Deposit Manager}
+    {}
+    {Nov. 2019 - Nov. 2020}
+    {
+      \begin{cvitems}
+      \item {Designed and implemented Deposit Manager(Golang+NodeJS) server which is Bitspawn Payment Gateway that 1.)accepts deposit by multi-currency(ETH/BTC/USD) and mint SPWN token on internal POA network; 2.) allow withdrawal from SPWN token to multi-currency(ETH/BTC/USD/SPWN)).}
+        \item {Cobra CLI: support side features other then deposit/withdrawal: token migration; KMS encryption/decryption; admin mint; smart contract deployment; HD wallet management.}
+        \item {Support multiple platforms withdrawal for one currency.}
+        \item {Highly configurable: easily switch ON/OFF for deposit/withdrawal currency availability, and support auto or manual process.}
+        \item {Finite State Machine design allows future scaliability.}
+        \item {Admin customizable Solidity smart contracts ensure the atomicity of both deposit and withdrawal transactions.}  
+      \end{cvitems}
+    }
+    
+\cventry
+    {Technologies: \quad BitCoin, Ethereum, Typescript, BIP-32, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256}
+    {OneLedger Hierarchical Deterministic(HD) Wallet}
+    {}
+    {Jun. 2019 - Apr, 2020}
+    {
+      \begin{cvitems}
+        \item {OneLedger HD Wallet is a JavaScript module that provides ability to generate keypairs and sign Raw Transactions for multiple chains.}
+        \item {Support configurable entropy to derive master seed.}
+        \item {Support whole wallet backup and recovery from any device by mnemonic.}
+        \item {Support BTC, ETH and OLT(OneLedger) keys derivation, address verification and transaction signing.}
+        \item {Hide derived master seed and all private key to maximum security.}
+        \item {Using hardened extended key path from BIP-39.}
+        \item {Easily extendable to support other blockchain key algorithm.}
       \end{cvitems}
     }
 
 \cventry
-    {Technologies: \quad Typescript, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256
-    }
-    {Oneledger Hierarchical Deterministic(HD) Wallet}
+    {Technologies: \quad Typescript, NodeJS, RPC}
+    {OneLedger SDK}
     {}
-    {Jun. 2019 - Now}
+    {Apr. 2019 - now}
     {
       \begin{cvitems}
-        \item {Oneledger HD Wallet allows community to generate new keypairs and sign RawTxs for multiple chains.}
-        \item {Support configurable entropy to derive master seed for backup.}
-        \item {Support whole wallet recovery from any device.}
-        \item {Support BTC, ETH and OLT(Oneledger) keys derivation.}
-        \item {Encapsulated master seed and any private key derivation for security.}
-        \item {Export new key derivation and transaction sign to caller.}
-        \item {Using hardened extended key path for local wallet.}
-        \item {Support different address verification based on the chain type.}
+        \item {OneLedger SDK is a whole middle layer of JavaScript modules between community developers and OneLedger blockchain protocol which allows developers to query block or transaction info and securely serialise transactions offline and broadcast them.}
+        \item {Highly configurable offline transaction serialization and signing workflow which allows community to extend their own transaction types, even using different network.}
+        \item {Support different types of transaction broadcasting such as Async, Sync.}
+        \item {Support both regular transaction and BTC/ETH Interoperability transaction.}
+        \item {Multiple sub-modules design that separates transaction preparation, signing and broadcast into different modules for scaliability.}
+        \item {Easily configurable error handler for community to add and handle new errors.}
+        \item {Configurable storage usage for different platforms(Web/Chrome Extension/Electron/Native).}
+        \item {Support Ledger Device(Cold Wallet) with different connection type such as Bluetooth, USB etc.}
       \end{cvitems}
     }
-    
-\cventry
-    {Technologies: \quad Go, Tendermint
-    }
-    {Oneledger Protocol}
-    {}
-    {May. 2019 - Now}
-    {
-      \begin{cvitems}
-        \item {Oneledger chain is one of the main Blockchain networks which aims to build enterprise level Interoperability and open source for community to build apps.}
-        \item {Using Tendermint as core consensus component, Oneledger chain builds application(Fullnode) layer, transaction verification layer and chain state distributed database layer on fullnode and explorer node.}
-        \item {Contributed on Apply Validator feature. Allow fullnode address to stake and become a validator or unstake to purge validator.}
-        \item {Contributed on Transaction Fee feature. Designed and implemented transaction fee charge logic, fee collection and fee reward withdraw for validators.}
-      \end{cvitems}
-    }
-    
     
     \cventry
-    {Technologies: \quad Go, Tendermint, PostgreSQL
-    }
-    {Oneledger Explorer}
+    {Technologies: \quad Go, WebSocket, Tendermint, Tendermint Events, PostgreSQL, SQS, CronJob}
+    {OneLedger Blockchain Explorer}
     {}
-    {Aug. 2019 - Now}
+    {Dec. 2019 - Now}
     {
       \begin{cvitems}
-        \item {Oneledger chain Explorer is a centralized server to watch and synchronize new block from Oneledger Fullnode and provide API for querying Oneledger chain info.}
-        \item {By connecting to RPC endpoint of a Fullnode Tendermint, watch and sync all blocks and all transactions and persist in PostgreSQL.}
-        \item {Catching up blocks and transactions if Explorer is down or restarted.}
-        \item {Easily extendable transaction type design and DB design for new transaction types in Protocol.}
-        \item {Provide web socket for Oneledger Explorer UI.}
-        \item {Provide API for community developers to query blocks and transactions info.}
+        \item {OneLedger blockchain Explorer is a set of services that watch, synchronize new block from OneLedger blockchain; persist block/transaction data into postgreSQL database; provide restful APIs for querying; send configruable notification for blockchain data alert.(\url{https://oneledger.network})}
+        \item {Self-catch-up plus SQS design guarantees the data integrity if Explorer or blockchain node is down or restarted.}
+        \item {Micro-services design that data source is writing to SQS, and data handler is reading from SQS.}
+        \item {Internal cronjob(goroutines) module maintains the public metrics data.}
+        \item {Configurable notification module sends alerts to multiple receivers.}
+        \item {Easily extendable transaction type design and DB design for new transaction types.}
+        \item {Provide web socket for real-time blockchain info.}
+        \item {Provide APIs for community developers to query blocks and transactions info.}
       \end{cvitems}
     }
 
@@ -105,20 +120,20 @@
       \end{cvitems}
     }
 
-  \cventry
-    {Technologies: \quad Solidity, Truffle, Remix IDE, Ethereum Wallet, OpenZeppelin, Quantstamp
-    }
-    {Skyquark ICO Smart Contract for Aristotle Token}
-    {}
-    {Aug. 2018 - Oct. 2018}
-    {
-      \begin{cvitems} 
-        \item {This ICO smart contract has four components: Secure math, ownership control, pause, ERC-20 implementation.}
-        \item {It has been tested by OpenZeppelin and Quantstamp.}
-        \item {It was deployed on Ethereum mainnet but tested on Rinkeby.}
-        \item {Aristotle Token is able to be transferred between Ethereum mainnet and Aristotle chain using parity bridge protocol(developing).}
-      \end{cvitems}
-    }
+%   \cventry
+%     {Technologies: \quad Solidity, Truffle, Remix IDE, Ethereum Wallet, OpenZeppelin, Quantstamp
+%     }
+%     {Skyquark ICO Smart Contract for Aristotle Token}
+%     {}
+%     {Aug. 2018 - Oct. 2018}
+%     {
+%       \begin{cvitems} 
+%         \item {This ICO smart contract has four components: Secure math, ownership control, pause, ERC-20 implementation.}
+%         \item {It has been tested by OpenZeppelin and Quantstamp.}
+%         \item {It was deployed on Ethereum mainnet but tested on Rinkeby.}
+%         \item {Aristotle Token is able to be transferred between Ethereum mainnet and Aristotle chain using parity bridge protocol(developing).}
+%       \end{cvitems}
+%     }
 
  
   \cventry
