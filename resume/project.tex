@@ -1,11 +1,74 @@
 \cvsection{Projects(Github)}
 \begin{cventries}
+\cventry
+    {Technologies: \quad Go, Ethereum, Solidity, Open Zeppelin Relayer}
+    {ChainSafe Systems - Gasless Transaction as Service}
+    {}
+    {Sep. 2021 - Now}
+    {
+      \begin{cvitems}
+        \item {GTS is a centralized server, which is able to pay gas fee on behalf of the signer of a transaction on EVM based chain.}
+        \item {Worked as TL \& dev in this project.}
+        \item {Currently support 3 types of transactions: Sending Ether, ERC-20, ERC-721 token transfer, arbitrary contract call.}
+        \item {Powered by Open Zeppelin Relayer on the backend.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Technologies: \quad Go, Cosmos-SDK, Chainlink}
+    {ChainSafe Systems - Cosmos Chainlink Module}
+    {}
+    {Mar. 2021 - Sep. 2021}
+    {
+      \begin{cvitems}
+        \item {Cosmos Chainlink module is one of the Cosmos SDK modules that designed and developed by ChainSafe Systems.}
+        \item {Worked as TL \& dev in this project.}
+        \item {This module follows Cosmos Module development standard.}
+        \item {It links Cosmos and Chainlink ecosystems so that community developers are able to submit/retrieve the feed data from Chainlink in the Cosmos ecosystem.}
+        \item {Hierarchical management design makes sure the validity of the oracle data. Each data feed maintains its own owner list and data provider list.}
+        \item {Token rewarded to the valid data provider each round.}
+        \item {Business agnostic design makes the module generic in any kind data.}
+      \end{cvitems}
+    }
+    
+\cventry
+    {Technologies: \quad Go, Ethereum, Cosmos}
+    {ChainSafe Systems - Ethermint}
+    {}
+    {Jan. 2021 - Mar. 2021}
+    {
+      \begin{cvitems}
+        \item {Ethermint is a blockchain protocol developed in Go that enables Solidity on Cosmos which combines the smart contract ability of Ethereum with the fast finality and cheaper gas of Cosmos.}
+        \item {Developed the gRPC and JSON-RPC layer for Ethermint. It is compatible with Web3js so that any dApps using web3js can be connected to Ethermint seamlessly.}
+      \end{cvitems}
+    }
+    
+\cventry
+    {Technologies: \quad Go, NodeJS, Redis, PostgreSQL, Bloom Filter, HD wallet, FSM, Ethereum, BitCoin, Solana}
+    {BitSpawn - Deposit Manager}
+    {}
+    {Jul. 2019 - Dec. 2021}
+    {
+      \begin{cvitems}
+      \item {Designed and implemented Deposit Manager(Golang+NodeJS) centralized server which is the Bitspawn Payment Gateway that \\
+      1.) accepts deposit by multiple currencies(ETH/BTC/ERC20 tokens/SPL tokens/USD) and mint SPWN token on internal POA network; \\
+      2.) allow withdraw from SPWN token to multiple currencies(ETH/BTC/ERC20 tokens/SPL tokens/USD); \\
+      3.) Providing real time currency exchange rate query, internal token conversion .etc APIs for other backend services.}
+        \item {Cobra CLI: support side features other then deposit/withdraw: token migration; KMS encryption/decryption; admin mint/burn/transfer; smart contract deployment; HD wallet management and Production tx scanning and reporting.}
+        \item {Support multiple platforms withdraw for one currency.}
+        \item {Down time catching up for all missed blocks/transactions.}
+        \item {Highly configurable: easily switch ON/OFF for deposit/withdraw currency availability, and support auto or manual process.}
+        \item {Finite State Machine design allows future scaliability.}
+        \item {Admin customizable Solidity smart contracts ensure the atomicity of both deposit and withdraw transactions.}  
+        \item {This whole project was implemented by myself.}
+      \end{cvitems}
+    }
 
 \cventry
     {Technologies: \quad Go, Tendermint}
-    {OneLedger Blockchain Protocol}
+    {OneLedger - Blockchain Protocol}
     {}
-    {Oct. 2019 - Now}
+    {Oct. 2019 - Dec. 2021}
     {
       \begin{cvitems}
         \item {OneLedger blockchain is one of the public Blockchain networks which aims to build enterprise level Interoperability and open source for community to build dApps. (\url{https://github.com/Oneledger/protocol}).}
@@ -18,25 +81,9 @@
       \end{cvitems}
     }
     
-    \cventry
-    {Technologies: \quad Go, NodeJS, Redis, PostgreSQL, Bloom Filter, HD wallet, FSM, Ethereum, BitCoin}
-    {BitSpawn Deposit Manager}
-    {}
-    {Nov. 2019 - Nov. 2020}
-    {
-      \begin{cvitems}
-      \item {Designed and implemented Deposit Manager(Golang+NodeJS) server which is Bitspawn Payment Gateway that 1.)accepts deposit by multi-currency(ETH/BTC/USD) and mint SPWN token on internal POA network; 2.) allow withdrawal from SPWN token to multi-currency(ETH/BTC/USD/SPWN)).}
-        \item {Cobra CLI: support side features other then deposit/withdrawal: token migration; KMS encryption/decryption; admin mint; smart contract deployment; HD wallet management.}
-        \item {Support multiple platforms withdrawal for one currency.}
-        \item {Highly configurable: easily switch ON/OFF for deposit/withdrawal currency availability, and support auto or manual process.}
-        \item {Finite State Machine design allows future scaliability.}
-        \item {Admin customizable Solidity smart contracts ensure the atomicity of both deposit and withdrawal transactions.}  
-      \end{cvitems}
-    }
-    
 \cventry
     {Technologies: \quad BitCoin, Ethereum, Typescript, BIP-32, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256}
-    {OneLedger Hierarchical Deterministic(HD) Wallet}
+    {OneLedger - Hierarchical Deterministic(HD) Wallet}
     {}
     {Jun. 2019 - Apr, 2020}
     {
@@ -53,9 +100,9 @@
 
 \cventry
     {Technologies: \quad Typescript, NodeJS, RPC}
-    {OneLedger SDK}
+    {OneLedger - SDK}
     {}
-    {Apr. 2019 - now}
+    {Apr. 2019 - Jan. 2021}
     {
       \begin{cvitems}
         \item {OneLedger SDK is a whole middle layer of JavaScript modules between community developers and OneLedger blockchain protocol which allows developers to query block or transaction info and securely serialise transactions offline and broadcast them.}
@@ -71,9 +118,9 @@
     
     \cventry
     {Technologies: \quad Go, WebSocket, Tendermint, Tendermint Events, PostgreSQL, SQS, CronJob}
-    {OneLedger Blockchain Explorer}
+    {OneLedger - Blockchain Explorer}
     {}
-    {Dec. 2019 - Now}
+    {Jun. 2019 - Jan. 2021}
     {
       \begin{cvitems}
         \item {OneLedger blockchain Explorer is a set of services that watch, synchronize new block from OneLedger blockchain; persist block/transaction data into postgreSQL database; provide restful APIs for querying; send configruable notification for blockchain data alert.(\url{https://oneledger.network})}
@@ -88,9 +135,8 @@
     }
 
 \cventry
-    {Technologies: \quad Truffle, Parity, AWS
-    }
-    {SkyQuark Aristotle Chain}
+    {Technologies: \quad Truffle, Parity, AWS}
+    {SkyQuark - Aristotle Chain}
     {}
     {May. 2018 - Apr. 2019}
     {
@@ -105,7 +151,7 @@
 \cventry
     {Technologies: \quad Nodejs, KoA, MongoDB, LevelDB, web3.js, truffle, AWS, Postman
     }
-    {SkyQuark Crowdsourcing System}
+    {SkyQuark - Crowdsourcing System}
     {}
     {Sept. 2018 - Apr. 2019}
     {
@@ -139,7 +185,7 @@
   \cventry
     {Technologies: \quad Truffle, Solidity, Web3, NodeJs, IPFS, Webpack
     }
-    {SkyQuark Intellectual Property Protection dApp}
+    {SkyQuark - Intellectual Property Protection dApp}
     {}
     {Jun. 2018 - Sept. 2018}
     {
@@ -153,7 +199,7 @@
 
   \cventry
     {Technologies: \quad Android, adb shell monkey, Android system permission, Android system sign, Git}
-    {Monkey}
+    {BlackBerry - Monkey}
     {}
     {Jun. 2017 - Sept. 2017}
     {
@@ -167,7 +213,7 @@
   
   \cventry
     {Technologies: \quad Android, Google Map API, Geolocation, AWS, MySQL, Web Server, Git}
-    {Waterloo Discovery}
+    {UWaterloo Hackathon - Waterloo Discovery}
     {}
     {Feb. 2017 - Feb. 2017}
     {
