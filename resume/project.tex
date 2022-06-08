@@ -14,19 +14,19 @@
       \end{cvitems}
     }
 
-\cventry
-    {Technologies: \quad Go, Ethereum, Solidity, Open Zeppelin Relayer}
-    {ChainSafe Systems - Gasless Transaction as Service}
-    {}
-    {Nov. 2021 - Feb. 2022}
-    {
-      \begin{cvitems}
-        \item {GTS is a centralized server, which is able to pay gas fee on behalf of the signer of a transaction on EVM based chain.}
-        \item {Participated as TL \& dev in this project.}
-        \item {Currently support 3 types of transactions: Sending Ether, ERC-20, ERC-721 token transfer, arbitrary contract call.}
-        \item {Powered by Open Zeppelin Relayer on the backend.}
-      \end{cvitems}
-    }
+% \cventry
+%     {Technologies: \quad Go, Ethereum, Solidity, Open Zeppelin Relayer}
+%     {ChainSafe Systems - Gasless Transaction as Service}
+%     {}
+%     {Nov. 2021 - Feb. 2022}
+%     {
+%       \begin{cvitems}
+%         \item {GTS is a centralized server, which is able to pay gas fee on behalf of the signer of a transaction on EVM based chain.}
+%         \item {Participated as TL \& dev in this project.}
+%         \item {Currently support 3 types of transactions: Sending Ether, ERC-20, ERC-721 token transfer, arbitrary contract call.}
+%         \item {Powered by Open Zeppelin Relayer on the backend.}
+%       \end{cvitems}
+%     }
 
 \cventry
     {Technologies: \quad Go, Cosmos-SDK, Chainlink}
@@ -112,73 +112,73 @@
       \end{cvitems}
     }
 
-\cventry
-    {Technologies: \quad Typescript, NodeJS, RPC}
-    {OneLedger - SDK}
-    {}
-    {Apr. 2019 - Jan. 2021}
-    {
-      \begin{cvitems}
-        \item {OneLedger SDK is a whole middle layer of JavaScript modules between community developers and OneLedger blockchain protocol which allows developers to query block or transaction info and securely serialise transactions offline and broadcast them.}
-        \item {Highly configurable offline transaction serialization and signing workflow which allows community to extend their own transaction types, even using different network.}
-        \item {Support different types of transaction broadcasting such as Async, Sync.}
-        \item {Support both regular transaction and BTC/ETH Interoperability transaction.}
-        \item {Multiple sub-modules design that separates transaction preparation, signing and broadcast into different modules for scaliability.}
-        \item {Easily configurable error handler for community to add and handle new errors.}
-        \item {Configurable storage usage for different platforms(Web/Chrome Extension/Electron/Native).}
-        \item {Support Ledger Device(Cold Wallet) with different connection type such as Bluetooth, USB etc.}
-      \end{cvitems}
-    }
+% \cventry
+%     {Technologies: \quad Typescript, NodeJS, RPC}
+%     {OneLedger - SDK}
+%     {}
+%     {Apr. 2019 - Jan. 2021}
+%     {
+%       \begin{cvitems}
+%         \item {OneLedger SDK is a whole middle layer of JavaScript modules between community developers and OneLedger blockchain protocol which allows developers to query block or transaction info and securely serialise transactions offline and broadcast them.}
+%         \item {Highly configurable offline transaction serialization and signing workflow which allows community to extend their own transaction types, even using different network.}
+%         \item {Support different types of transaction broadcasting such as Async, Sync.}
+%         \item {Support both regular transaction and BTC/ETH Interoperability transaction.}
+%         \item {Multiple sub-modules design that separates transaction preparation, signing and broadcast into different modules for scaliability.}
+%         \item {Easily configurable error handler for community to add and handle new errors.}
+%         \item {Configurable storage usage for different platforms(Web/Chrome Extension/Electron/Native).}
+%         \item {Support Ledger Device(Cold Wallet) with different connection type such as Bluetooth, USB etc.}
+%       \end{cvitems}
+%     }
     
-    \cventry
-    {Technologies: \quad Go, WebSocket, Tendermint, Tendermint Events, PostgreSQL, SQS, CronJob}
-    {OneLedger - Blockchain Explorer}
-    {}
-    {Jun. 2019 - Jan. 2021}
-    {
-      \begin{cvitems}
-        \item {OneLedger blockchain Explorer is a set of services that watch, synchronize new block from OneLedger blockchain; persist block/transaction data into postgreSQL database; provide restful APIs for querying; send configruable notification for blockchain data alert.(\url{https://oneledger.network})}
-        \item {Self-catch-up plus SQS design guarantees the data integrity if Explorer or blockchain node is down or restarted.}
-        \item {Micro-services design that data source is writing to SQS, and data handler is reading from SQS.}
-        \item {Internal cronjob(goroutines) module maintains the public metrics data.}
-        \item {Configurable notification module sends alerts to multiple receivers.}
-        \item {Easily extendable transaction type design and DB design for new transaction types.}
-        \item {Provide web socket for real-time blockchain info.}
-        \item {Provide APIs for community developers to query blocks and transactions info.}
-      \end{cvitems}
-    }
+    % \cventry
+    % {Technologies: \quad Go, WebSocket, Tendermint, Tendermint Events, PostgreSQL, SQS, CronJob}
+    % {OneLedger - Blockchain Explorer}
+    % {}
+    % {Jun. 2019 - Jan. 2021}
+    % {
+    %   \begin{cvitems}
+    %     \item {OneLedger blockchain Explorer is a set of services that watch, synchronize new block from OneLedger blockchain; persist block/transaction data into postgreSQL database; provide restful APIs for querying; send configruable notification for blockchain data alert.(\url{https://oneledger.network})}
+    %     \item {Self-catch-up plus SQS design guarantees the data integrity if Explorer or blockchain node is down or restarted.}
+    %     \item {Micro-services design that data source is writing to SQS, and data handler is reading from SQS.}
+    %     \item {Internal cronjob(goroutines) module maintains the public metrics data.}
+    %     \item {Configurable notification module sends alerts to multiple receivers.}
+    %     \item {Easily extendable transaction type design and DB design for new transaction types.}
+    %     \item {Provide web socket for real-time blockchain info.}
+    %     \item {Provide APIs for community developers to query blocks and transactions info.}
+    %   \end{cvitems}
+    % }
 
-\cventry
-    {Technologies: \quad Truffle, Parity, AWS}
-    {SkyQuark - Aristotle Chain}
-    {}
-    {May. 2018 - Apr. 2019}
-    {
-      \begin{cvitems}
-        \item {Aristotle Chain using parity with PoA consensus algorithm generates an EVM based public chain for the foundation of SkyQuark Eco-system.}
-        \item {Users need to sign up Edusphere system to get a wallet address connecting to Aristotle Chain.}
-        \item {ETH Pre-fund accounts are transaction validators who are responsible for mining new blocks, validating all transactions.}
-        \item {Users could be part of validators and sync full Aristotle Chain blocks to earn more tokens.}
-      \end{cvitems}
-    }
+% \cventry
+%     {Technologies: \quad Truffle, Parity, AWS}
+%     {SkyQuark - Aristotle Chain}
+%     {}
+%     {May. 2018 - Apr. 2019}
+%     {
+%       \begin{cvitems}
+%         \item {Aristotle Chain using parity with PoA consensus algorithm generates an EVM based public chain for the foundation of SkyQuark Eco-system.}
+%         \item {Users need to sign up Edusphere system to get a wallet address connecting to Aristotle Chain.}
+%         \item {ETH Pre-fund accounts are transaction validators who are responsible for mining new blocks, validating all transactions.}
+%         \item {Users could be part of validators and sync full Aristotle Chain blocks to earn more tokens.}
+%       \end{cvitems}
+%     }
     
-\cventry
-    {Technologies: \quad Nodejs, KoA, MongoDB, LevelDB, web3.js, truffle, AWS, Postman
-    }
-    {SkyQuark - Crowdsourcing System}
-    {}
-    {Sept. 2018 - Apr. 2019}
-    {
-      \begin{cvitems}
-        \item {Crowdsourcing system is the extension of Nodejs back-end web server between Edusphere system and Aristotle Chain.}
-        \item {It's also the Aristotle chain user address, chain nodes and smart contracts   management center.}
-        \item {It connects with MongoDB as main business logic database and LevelDB as users reputation and other behaviors databases.}
-        \item {It communicates with Aristotle Chain through Web3.js API.}
-        \item {It provides APIs to the front-end edusphere system.}
-        \item {It provides users a revenue auto-distribution system based on the Aristotle Token mechanism without signing any paper or electrical revenue sharing contracts}
-        \item {Users behaviors on edusphere.io will be used to calculate the reputation and token rewards and the smart contracts deployed on Aristotle Chain will be triggered to make reward transactions}
-      \end{cvitems}
-    }
+% \cventry
+%     {Technologies: \quad Nodejs, KoA, MongoDB, LevelDB, web3.js, truffle, AWS, Postman
+%     }
+%     {SkyQuark - Crowdsourcing System}
+%     {}
+%     {Sept. 2018 - Apr. 2019}
+%     {
+%       \begin{cvitems}
+%         \item {Crowdsourcing system is the extension of Nodejs back-end web server between Edusphere system and Aristotle Chain.}
+%         \item {It's also the Aristotle chain user address, chain nodes and smart contracts   management center.}
+%         \item {It connects with MongoDB as main business logic database and LevelDB as users reputation and other behaviors databases.}
+%         \item {It communicates with Aristotle Chain through Web3.js API.}
+%         \item {It provides APIs to the front-end edusphere system.}
+%         \item {It provides users a revenue auto-distribution system based on the Aristotle Token mechanism without signing any paper or electrical revenue sharing contracts}
+%         \item {Users behaviors on edusphere.io will be used to calculate the reputation and token rewards and the smart contracts deployed on Aristotle Chain will be triggered to make reward transactions}
+%       \end{cvitems}
+%     }
 
 %   \cventry
 %     {Technologies: \quad Solidity, Truffle, Remix IDE, Ethereum Wallet, OpenZeppelin, Quantstamp
@@ -196,48 +196,48 @@
 %     }
 
  
-  \cventry
-    {Technologies: \quad Truffle, Solidity, Web3, NodeJs, IPFS, Webpack
-    }
-    {SkyQuark - Intellectual Property Protection dApp}
-    {}
-    {Jun. 2018 - Sept. 2018}
-    {
-      \begin{cvitems}
-        \item {IP Protection dApp developed on Rinkeby testnet first and deployed to Aristotle Chain after.}
-        \item {It has four different layers: chain layer, smart contract layer, web3(NodeJs) layer and UI layer}
-        \item {For the web part, it needs a web server like AWS to host the all front-end resource files(or IPFS) and web3 will connect to blockchain provider to interact with smart contracts and send transactions to the chain.}
-        \item {For all large size documents that users submit, they are all stored on the IPFS, only hash value will be stored into blockchain.}
-      \end{cvitems}
-    }
+%   \cventry
+%     {Technologies: \quad Truffle, Solidity, Web3, NodeJs, IPFS, Webpack
+%     }
+%     {SkyQuark - Intellectual Property Protection dApp}
+%     {}
+%     {Jun. 2018 - Sept. 2018}
+%     {
+%       \begin{cvitems}
+%         \item {IP Protection dApp developed on Rinkeby testnet first and deployed to Aristotle Chain after.}
+%         \item {It has four different layers: chain layer, smart contract layer, web3(NodeJs) layer and UI layer}
+%         \item {For the web part, it needs a web server like AWS to host the all front-end resource files(or IPFS) and web3 will connect to blockchain provider to interact with smart contracts and send transactions to the chain.}
+%         \item {For all large size documents that users submit, they are all stored on the IPFS, only hash value will be stored into blockchain.}
+%       \end{cvitems}
+%     }
 
-  \cventry
-    {Technologies: \quad Android, adb shell monkey, Android system permission, Android system sign, Git}
-    {BlackBerry - Monkey}
-    {}
-    {Jun. 2017 - Sept. 2017}
-    {
-      \begin{cvitems}
-        \item {This is an Android application for BlackBerry Spark Day.}
-        \item {This app encapsulates adb shell monkey command for BlackBerry internal pressure and performance testing.}
-        \item {Granting Android system permission and system sign to run sudo commands.}
-        \item {Running monkey command on target apps and generating the testing report for analyzing.}
-      \end{cvitems}
-    }
+%   \cventry
+%     {Technologies: \quad Android, adb shell monkey, Android system permission, Android system sign, Git}
+%     {BlackBerry - Monkey}
+%     {}
+%     {Jun. 2017 - Sept. 2017}
+%     {
+%       \begin{cvitems}
+%         \item {This is an Android application for BlackBerry Spark Day.}
+%         \item {This app encapsulates adb shell monkey command for BlackBerry internal pressure and performance testing.}
+%         \item {Granting Android system permission and system sign to run sudo commands.}
+%         \item {Running monkey command on target apps and generating the testing report for analyzing.}
+%       \end{cvitems}
+%     }
   
-  \cventry
-    {Technologies: \quad Android, Google Map API, Geolocation, AWS, MySQL, Web Server, Git}
-    {UWaterloo Hackathon - Waterloo Discovery}
-    {}
-    {Feb. 2017 - Feb. 2017}
-    {
-      \begin{cvitems}
-        \item {Developed an Android application about exploring the city of Waterloo for new comers such as international students and travelers in 2 people's team.}
-        \item {Using Google Map API to locate users, then calculate the distance.}
-        \item {Using Google Nearby resources.}
-        \item {Awarded Top 5 Hackathon project.}
-      \end{cvitems}
-    }
+%   \cventry
+%     {Technologies: \quad Android, Google Map API, Geolocation, AWS, MySQL, Web Server, Git}
+%     {UWaterloo Hackathon - Waterloo Discovery}
+%     {}
+%     {Feb. 2017 - Feb. 2017}
+%     {
+%       \begin{cvitems}
+%         \item {Developed an Android application about exploring the city of Waterloo for new comers such as international students and travelers in 2 people's team.}
+%         \item {Using Google Map API to locate users, then calculate the distance.}
+%         \item {Using Google Nearby resources.}
+%         \item {Awarded Top 5 Hackathon project.}
+%       \end{cvitems}
+%     }
     
     % \cventry
     % {Technologies: \quad Android, WebSocket, Multi-threading, Concurrency, MySQL, Git}
