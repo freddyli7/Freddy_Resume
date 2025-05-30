@@ -1,21 +1,41 @@
 \cvsection{Projects(Github)}
 \begin{cventries}
+
 \cventry
-    {Technologies: \quad Go, Ethereum, Solidity, Cryptography, LevelDB, Oracle}
-    {ChainSafe Systems - ChainBridge}
+    {Tech: \quad Go, Rust, Polkadot, Substrate, distributed Systems State Machine}
+    {ChainSafe Systems - Gossamer}
     {}
-    {Feb. 2022 - Now}
+    {Feb. 2025 - Now}
     {
       \begin{cvitems}
-        \item {ChainSafe ChainBridge is a decentralized cross-chain messaging protocol. It currently supports ERC20, ERC721 and generic message between any EVM based chain.}
+        \item {Developed the parachain block candidates verifiying subsystems.}
+        \item {Improving the muitlple subsystem communication channles by adopting the util mudules such as gossip support.}
+        \item {Splitting the block candidate processing logic from the distribution logic by adding the distribution subsystems.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Tech: \quad Rust, Go, Polkadot, Substrate, Ethereum, Solidity, Cryptography, LevelDB, Oracle, Docker}
+    {ChainSafe Systems - Sygma(ChainBridge)}
+    {}
+    {Feb. 2022 - Mar. 2025}
+    {
+      \begin{cvitems}
+        \item {ChainSafe Sygma is a decentralized cross-chain messaging protocol. It supports ERC20, ERC721 and generic message passing between any EVM based chain; and reserved, non-reserved token transferring between EVM and polkadot.}
         \item {Participated as researcher \& dev in this project.}
-        \item {Mainly in charge of the Dynamic fee feature, which is another independent service to connect with chain oracle and provide the gas price and token price for the destination chain as reference to the cross-chain messaging request; It also contact he fee handler contract to preform fee calcuation.}
-        \item {Also working on the research for bringing Cosmos ecosystem into the project by Cosmos ComsWasm.}
+        \item {Designed and developed the Sygma Substrate pallets along with mainnet, testnet, local testnet runtime.}
+        \item {Designed and developed the independent pallets with XCM to support Sygma on any substrate based chain(parachain and parathread).}
+        \item {Integrated with Phala mainet on Polkadot, testnet on Kusama.}
+        \item {Integrating with Asset hub and bridge hub parachian(WIP)}
+        \item {Designed the feature upgrade process for local testnet, public testnet, mainnet with docker images.}
+        \item {Cross organization collabration with Phala team in a different time zone.}
+        % \item {Mainly in charge of the Dynamic fee feature, which is another independent service to connect with chain oracle and provide the gas price and token price for the destination chain as reference to the cross-chain messaging request; It also contact he fee handler contract to preform fee calcuation.}
+        % \item {Also working on the research for bringing Cosmos ecosystem into the project by Cosmos ComsWasm.}
       \end{cvitems}
     }
 
 % \cventry
-%     {Technologies: \quad Go, Ethereum, Solidity, Open Zeppelin Relayer}
+%     {Tech: \quad Go, Ethereum, Solidity, Open Zeppelin Relayer}
 %     {ChainSafe Systems - Gasless Transaction as Service}
 %     {}
 %     {Nov. 2021 - Feb. 2022}
@@ -29,10 +49,10 @@
 %     }
 
 \cventry
-    {Technologies: \quad Go, Cosmos-SDK, Chainlink}
+    {Tech: \quad Go, Cosmos-SDK, Chainlink}
     {ChainSafe Systems - Cosmos Chainlink Module}
     {}
-    {Mar. 2021 - Nov. 2021}
+    {Aug. 2021 - Nov. 2022}
     {
       \begin{cvitems}
         \item {Cosmos Chainlink module is one of the Cosmos SDK modules that designed and developed by ChainSafe Systems.}
@@ -46,10 +66,10 @@
     }
     
 \cventry
-    {Technologies: \quad Go, Ethereum, Cosmos}
+    {Tech: \quad Go, Ethereum, Cosmos, Tendermint, EVM}
     {ChainSafe Systems - Ethermint}
     {}
-    {Jan. 2021 - Mar. 2021}
+    {Jan. 2021 - Aug. 2021}
     {
       \begin{cvitems}
         \item {Ethermint is a blockchain protocol developed in Go that enables Solidity on Cosmos which combines the smart contract ability of Ethereum with the fast finality and cheaper gas of Cosmos.}
@@ -58,7 +78,7 @@
     }
     
 \cventry
-    {Technologies: \quad Go, NodeJS, Redis, PostgreSQL, Bloom Filter, HD wallet, FSM, Ethereum, BitCoin, Solana}
+    {Tech: \quad Go, NodeJS, Redis, PostgreSQL, Bloom Filter, HD wallet, FSM, Ethereum, BitCoin, Solana}
     {BitSpawn - Deposit Manager}
     {}
     {Jul. 2019 - Dec. 2021}
@@ -79,7 +99,7 @@
     }
 
 \cventry
-    {Technologies: \quad Go, Tendermint}
+    {Tech: \quad Go, Tendermint, PBFT, Cosmos-SDK}
     {OneLedger - Blockchain Protocol}
     {}
     {Oct. 2019 - Dec. 2021}
@@ -96,7 +116,7 @@
     }
     
 \cventry
-    {Technologies: \quad BitCoin, Ethereum, Typescript, BIP-32, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256}
+    {Tech: \quad BitCoin, Ethereum, Typescript, BIP-32, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256}
     {OneLedger - Hierarchical Deterministic(HD) Wallet}
     {}
     {Jun. 2019 - Apr, 2020}
@@ -113,7 +133,7 @@
     }
 
 % \cventry
-%     {Technologies: \quad Typescript, NodeJS, RPC}
+%     {Tech: \quad Typescript, NodeJS, RPC}
 %     {OneLedger - SDK}
 %     {}
 %     {Apr. 2019 - Jan. 2021}
@@ -131,7 +151,7 @@
 %     }
     
     % \cventry
-    % {Technologies: \quad Go, WebSocket, Tendermint, Tendermint Events, PostgreSQL, SQS, CronJob}
+    % {Tech: \quad Go, WebSocket, Tendermint, Tendermint Events, PostgreSQL, SQS, CronJob}
     % {OneLedger - Blockchain Explorer}
     % {}
     % {Jun. 2019 - Jan. 2021}
@@ -149,7 +169,7 @@
     % }
 
 % \cventry
-%     {Technologies: \quad Truffle, Parity, AWS}
+%     {Tech: \quad Truffle, Parity, AWS}
 %     {SkyQuark - Aristotle Chain}
 %     {}
 %     {May. 2018 - Apr. 2019}
@@ -163,7 +183,7 @@
 %     }
     
 % \cventry
-%     {Technologies: \quad Nodejs, KoA, MongoDB, LevelDB, web3.js, truffle, AWS, Postman
+%     {Tech: \quad Nodejs, KoA, MongoDB, LevelDB, web3.js, truffle, AWS, Postman
 %     }
 %     {SkyQuark - Crowdsourcing System}
 %     {}
@@ -181,7 +201,7 @@
 %     }
 
 %   \cventry
-%     {Technologies: \quad Solidity, Truffle, Remix IDE, Ethereum Wallet, OpenZeppelin, Quantstamp
+%     {Tech: \quad Solidity, Truffle, Remix IDE, Ethereum Wallet, OpenZeppelin, Quantstamp
 %     }
 %     {SkyQuark ICO Smart Contract for Aristotle Token}
 %     {}
@@ -197,7 +217,7 @@
 
  
 %   \cventry
-%     {Technologies: \quad Truffle, Solidity, Web3, NodeJs, IPFS, Webpack
+%     {Tech: \quad Truffle, Solidity, Web3, NodeJs, IPFS, Webpack
 %     }
 %     {SkyQuark - Intellectual Property Protection dApp}
 %     {}
@@ -212,7 +232,7 @@
 %     }
 
 %   \cventry
-%     {Technologies: \quad Android, adb shell monkey, Android system permission, Android system sign, Git}
+%     {Tech: \quad Android, adb shell monkey, Android system permission, Android system sign, Git}
 %     {BlackBerry - Monkey}
 %     {}
 %     {Jun. 2017 - Sept. 2017}
@@ -226,7 +246,7 @@
 %     }
   
 %   \cventry
-%     {Technologies: \quad Android, Google Map API, Geolocation, AWS, MySQL, Web Server, Git}
+%     {Tech: \quad Android, Google Map API, Geolocation, AWS, MySQL, Web Server, Git}
 %     {UWaterloo Hackathon - Waterloo Discovery}
 %     {}
 %     {Feb. 2017 - Feb. 2017}
@@ -240,7 +260,7 @@
 %     }
     
     % \cventry
-    % {Technologies: \quad Android, WebSocket, Multi-threading, Concurrency, MySQL, Git}
+    % {Tech: \quad Android, WebSocket, Multi-threading, Concurrency, MySQL, Git}
     % {Instant Message system}
     % {}
     % {Oct. 2016 - Jan. 2017}
@@ -252,7 +272,7 @@
     % }
     
     % \cventry
-    % {Technologies: \quad JavaEE, Struts2, Spring3, Hibernate4, Maven, Nexus, Tomcat, MySQL, Design patterns, MVC, Git}
+    % {Tech: \quad JavaEE, Struts2, Spring3, Hibernate4, Maven, Nexus, Tomcat, MySQL, Design patterns, MVC, Git}
     % {FreeX(Backend)}
     % {}
     % {Oct. 2016 - Dec. 2016}
@@ -267,7 +287,7 @@
     % }
     
     % \cventry
-    % {Technologies: \quad JavaEE, Servlet, DBCP, Java 2D Graphics, Tomcat, MySQL}
+    % {Tech: \quad JavaEE, Servlet, DBCP, Java 2D Graphics, Tomcat, MySQL}
     % {Hospital Invoice printing System}
     % {}
     % {Sept. 2016 - Oct. 2016}
@@ -283,7 +303,7 @@
     % }
     
     %  \cventry
-    % {Technologies: \quad  Android, SQLite}
+    % {Tech: \quad  Android, SQLite}
     % {Multiple Choice}
     % {}
     % {Aug. 2016 - Oct. 2016}
@@ -297,7 +317,7 @@
     % }
     
     % \cventry
-    % {Technologies:\quad JavaEE, MVC, Struts2, Hibernate4, Spring-IoC, MySQL, Tomcat, Apache components, AJAX, JavaScript, jQuery, JSP, HTML, CSS, Bootstrap}
+    % {Tech: \quad JavaEE, MVC, Struts2, Hibernate4, Spring-IoC, MySQL, Tomcat, Apache components, AJAX, JavaScript, jQuery, JSP, HTML, CSS, Bootstrap}
     % {Cookie Social Network System }
     % {}
     % {Dec. 2014 - Jun. 2015}

@@ -221,21 +221,21 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{30pt}
 {1em}\headerfont\bfseries\color{darktext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{30pt}
 {1em}\headerfontlight\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{10pt}{1em}\headerfont\itshape\color{lighttext} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
@@ -255,7 +255,7 @@
 
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}
 
 % For elements of the cover letter
 \newcommand*{\paragraphstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -400,11 +400,11 @@
       \@lastname
     }
     \\
-    \vspace{0.4mm}
+    \vspace{1.4mm}
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\}}
-    \vspace{0.4mm}
+    \vspace{1.4mm}
     \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\}}
-    \vspace{-0.5mm}
+    \vspace{0.5mm}
     \headersocialstyle{
       \newbool{isstart}
       \setbool{isstart}{true}
@@ -509,10 +509,10 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{.2ex}
+  \par\addvspace{4.2ex}
   \phantomsection{}
   \sectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{gray}\vhrulefill{1.2pt}
   \par\nobreak\addvspace{1ex}
 }
 
