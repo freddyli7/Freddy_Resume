@@ -1,36 +1,34 @@
-\cvsection{Projects(Github)}
+\cvsection{Highlight Projects}
 \begin{cventries}
 
-\cventry
-    {Tech: \quad Go, Rust, Polkadot, Substrate, distributed Systems State Machine}
-    {ChainSafe Systems - Gossamer}
-    {}
-    {Feb. 2025 - Now}
-    {
-      \begin{cvitems}
-        \item {Developed the parachain block candidates verifiying subsystems.}
-        \item {Improving the muitlple subsystem communication channles by adopting the util mudules such as gossip support.}
-        \item {Splitting the block candidate processing logic from the distribution logic by adding the distribution subsystems.}
-      \end{cvitems}
-    }
+% \cventry
+%     {Tech: \quad Go, Rust, Polkadot, Substrate, distributed Systems State Machine}
+%     {ChainSafe Systems - Gossamer}
+%     {}
+%     {Feb. 2025 - Now}
+%     {
+%       \begin{cvitems}
+%         \item {Developed the parachain block candidates verifiying subsystems.}
+%         \item {Improving the muitlple subsystem communication channles by adopting the util mudules such as gossip support.}
+%         \item {Splitting the block candidate processing logic from the distribution logic by adding the distribution subsystems.}
+%       \end{cvitems}
+%     }
 
 \cventry
-    {Tech: \quad Rust, Go, Polkadot, Substrate, Ethereum, Solidity, Cryptography, LevelDB, Oracle, Docker}
-    {ChainSafe Systems - Sygma(ChainBridge)}
+    {https://github.com/sprintertech/sygma-substrate-pallets}
+    {ChainSafe Systems - Sygma}
     {}
-    {Feb. 2022 - Mar. 2025}
+    {Jul. 2021 - Mar. 2025}
     {
       \begin{cvitems}
         \item {ChainSafe Sygma is a decentralized cross-chain messaging protocol. It supports ERC20, ERC721 and generic message passing between any EVM based chain; and reserved, non-reserved token transferring between EVM and polkadot.}
-        \item {Participated as researcher \& dev in this project.}
-        \item {Designed and developed the Sygma Substrate pallets along with mainnet, testnet, local testnet runtime.}
-        \item {Designed and developed the independent pallets with XCM to support Sygma on any substrate based chain(parachain and parathread).}
-        \item {Integrated with Phala mainet on Polkadot, testnet on Kusama.}
-        \item {Integrating with Asset hub and bridge hub parachian(WIP)}
-        \item {Designed the feature upgrade process for local testnet, public testnet, mainnet with docker images.}
-        \item {Cross organization collabration with Phala team in a different time zone.}
-        % \item {Mainly in charge of the Dynamic fee feature, which is another independent service to connect with chain oracle and provide the gas price and token price for the destination chain as reference to the cross-chain messaging request; It also contact he fee handler contract to preform fee calcuation.}
-        % \item {Also working on the research for bringing Cosmos ecosystem into the project by Cosmos ComsWasm.}
+        \item {Led design and full ownership of cross-chain bridging modules, including runtime development and Substrate pallet implementation for mainnet, testnet, and local testnet environments.}
+        \item {Improved destination chain voting by moving it from on-chain to off-chain, reducing gas costs while increasing throughput and system efficiency.}
+        \item {Collaborated closely with EVM team to ensure MPC processes, including key generation and key sharing, met production-level security standards.}
+        \item {Designed and developed independent Substrate pallets with cross-chain messaging support, enabling Sygma integration on any Substrate-based chain (parachain or parathread).}
+        \item {Integrated Sygma with multiple chains including Phala Polkadot mainnet, its Kusama testnet; Tangle standalone parachain, Asset Hub, and Bridge Hub, solving multi-chain interoperability challenges.}
+        \item {Built and maintained CI/CD pipelines and feature upgrade workflows for local, public testnet, and mainnet deployments using Docker, enabling fast feedback and iterative improvement.}
+        \item {Coordinated across time zones with partner teams to resolve issues and deliver features effectively, ensuring smooth cross-organization collaboration.}
       \end{cvitems}
     }
 
@@ -49,15 +47,14 @@
 %     }
 
 \cventry
-    {Tech: \quad Go, Cosmos-SDK, Chainlink}
+    {https://github.com/ChainSafe/chainlink-cosmos}
     {ChainSafe Systems - Cosmos Chainlink Module}
     {}
-    {Aug. 2021 - Nov. 2022}
+    {Jan. 2021 - Aug. 2021}
     {
       \begin{cvitems}
         \item {Cosmos Chainlink module is one of the Cosmos SDK modules that designed and developed by ChainSafe Systems.}
-        \item {Participated as TL \& dev in this project.}
-        \item {This module follows Cosmos Module development standard.}
+        \item {Participated as Tech lead in this project.}
         \item {It links Cosmos and Chainlink ecosystems so that community developers are able to submit/retrieve the feed data from Chainlink in the Cosmos ecosystem.}
         \item {Hierarchical management design makes sure the validity of the oracle data. Each data feed maintains its own owner list and data provider list.}
         \item {Token rewarded to the valid data provider each round.}
@@ -65,47 +62,45 @@
       \end{cvitems}
     }
     
-\cventry
-    {Tech: \quad Go, Ethereum, Cosmos, Tendermint, EVM}
-    {ChainSafe Systems - Ethermint}
-    {}
-    {Jan. 2021 - Aug. 2021}
-    {
-      \begin{cvitems}
-        \item {Ethermint is a blockchain protocol developed in Go that enables Solidity on Cosmos which combines the smart contract ability of Ethereum with the fast finality and cheaper gas of Cosmos.}
-        \item {Developed the gRPC and JSON-RPC layer for Ethermint. It is compatible with Web3js so that any dApps using web3js can be connected to Ethermint seamlessly.}
-      \end{cvitems}
-    }
+% \cventry
+%     {Tech: \quad Go, Ethereum, Cosmos, Tendermint, EVM}
+%     {ChainSafe Systems - Ethermint}
+%     {}
+%     {Jan. 2021 - Aug. 2021}
+%     {
+%       \begin{cvitems}
+%         \item {Ethermint is a blockchain protocol developed in Go that enables Solidity on Cosmos which combines the smart contract ability of Ethereum with the fast finality and cheaper gas of Cosmos.}
+%         \item {Developed the gRPC and JSON-RPC layer for Ethermint. It is compatible with Web3js so that any dApps using web3js can be connected to Ethermint seamlessly.}
+%       \end{cvitems}
+%     }
     
 \cventry
-    {Tech: \quad Go, NodeJS, Redis, PostgreSQL, Bloom Filter, HD wallet, FSM, Ethereum, BitCoin, Solana}
+    {Private Github Repo}
     {BitSpawn - Deposit Manager}
     {}
     {Jul. 2019 - Dec. 2021}
     {
       \begin{cvitems}
-      \item {Designed and implemented Deposit Manager(Golang+NodeJS) centralized server which is the Bitspawn Payment Gateway that \\
-      1.) accepts deposit by multiple currencies(ETH/BTC/ERC20 tokens/SPL tokens/USD) and mint SPWN token on internal POA network; \\
-      2.) allow withdraw from SPWN token to multiple currencies(ETH/BTC/ERC20 tokens/SPL tokens/USD); \\
-      3.) Providing real time currency exchange rate query, internal token conversion .etc APIs for other backend services.}
-        \item {Cobra CLI: support side features other then deposit/withdraw: token migration; KMS encryption/decryption; admin mint/burn/transfer; smart contract deployment; HD wallet management and Production tx scanning and reporting.}
-        \item {Support multiple platforms withdraw for one currency.}
-        \item {Down time catching up for all missed blocks/transactions.}
-        \item {Highly configurable: easily switch ON/OFF for deposit/withdraw currency availability, and support auto or manual process.}
-        \item {Finite State Machine design allows future scaliability.}
-        \item {Admin customizable Solidity smart contracts ensure the atomicity of both deposit and withdraw transactions.}  
-        \item {This whole project was implemented by myself, currently has approximately 170,000 active users(By Jan 2022).}
+        \item {Designed and implemented the Deposit Manager (Golang + NodeJS), a centralized payment gateway handling multi-currency deposits and withdrawals, including ETH, BTC, ERC20/SPL tokens, and USDC, with automated minting/burning of internal SPWN tokens.}
+        \item {Built APIs for real-time currency exchange rates and internal token conversions, enabling other backend services to integrate seamlessly.}
+        \item {Developed a Cobra CLI for auxiliary features, including token migration, KMS encryption/decryption, admin mint/burn/transfer, smart contract deployment, HD wallet management, and transaction reporting.}
+        \item {Ensured multi-platform withdrawals and robust block/transaction catch-up mechanisms to maintain system reliability.}
+        \item {Designed a highly configurable system with switchable deposit/withdraw options and both automated and manual workflows.}
+        \item {Applied a finite-state-machine architecture to allow scalable growth and maintainable future enhancements.}
+        \item {Implemented admin-customizable smart contracts to guarantee atomicity of deposit and withdrawal operations.}
+        \item {Worked independently while actively communicating with multiple teams to explore balanced technical solutions, optimize processes, and resolve integration challenges.}
+        \item {Continuously iterated and self-learned to improve system performance, security, and usability, supporting 170,000 monthly active users by January 2022.}
       \end{cvitems}
     }
 
 \cventry
-    {Tech: \quad Go, Tendermint, PBFT, Cosmos-SDK}
-    {OneLedger - Blockchain Protocol}
+    {https://github.com/Oneledger/protocol}
+    {OneLedger - L1 Blockchain Protocol}
     {}
-    {Oct. 2019 - Dec. 2021}
+    {Apr. 2019 - Jan. 2021}
     {
       \begin{cvitems}
-        \item {OneLedger blockchain is one of the public Blockchain networks which aims to build enterprise level Interoperability and open source for community to build dApps. (\url{https://github.com/Oneledger/protocol}).}
+        \item {OneLedger blockchain is one of the public Blockchain networks which aims to build enterprise level Interoperability and open source for community to build dApps.}
         \item {Using Tendermint as core consensus engine, OneLedger chain has application(node) layer, RPC layer, transaction verification /distribution layer and chain state distributed database(LevelDB) layer on fullnode and validator node.}
         \item {RPC layer: designed and implemented RPC endpoints for transaction and query.}
         \item {Transaction layer: designed and implemented transaction verification(signature mapping) for all transaction types, transaction fee charge logic, fee collection and reward withdrawal for validators.}
@@ -116,19 +111,20 @@
     }
     
 \cventry
-    {Tech: \quad BitCoin, Ethereum, Typescript, BIP-32, BIP-39, Ed25519, Secp256K1, RIPEMD160, SHA256}
+    {Private Github Repo}
     {OneLedger - Hierarchical Deterministic(HD) Wallet}
     {}
     {Jun. 2019 - Apr, 2020}
     {
       \begin{cvitems}
-        \item {OneLedger HD Wallet is a JavaScript module that provides ability to generate keypairs and sign Raw Transactions for multiple chains.}
+        \item {OneLedger HD Wallet is a TypeScript module that provides ability to generate keypairs and sign Raw Transactions for multiple chains.}
         \item {Support configurable entropy to derive master seed.}
         \item {Support whole wallet backup and recovery from any device by mnemonic.}
         \item {Support BTC, ETH and OLT(OneLedger) keys derivation, address verification and transaction signing.}
         \item {Hide derived master seed and all private key to maximum security.}
         \item {Using hardened extended key path from BIP-39.}
         \item {Easily extendable to support other blockchain key algorithm.}
+        \item {Supported on Ledger Hardware device.}
       \end{cvitems}
     }
 
